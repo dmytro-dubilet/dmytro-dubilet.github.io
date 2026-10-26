@@ -1,0 +1,1 @@
+let n=null;async function u(e,t){return t||(n||(n=(async()=>{const{data:r,error:l}=await e.rpc("current_person_id");return l?null:typeof r=="string"&&r.length>0?r:null})().finally(()=>{n=null})),n)}export{u as e};

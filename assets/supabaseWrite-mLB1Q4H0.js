@@ -1,0 +1,1 @@
+import{aE as o}from"./index-BAmVVlQP.js";async function l(t,a,s={}){const{data:r,error:e}=await t,n=Array.isArray(r)?r.length>0:!!r;return e||!n?(s.silent||o.error(`${a} failed`,{description:(e==null?void 0:e.message)||"No row was written (likely blocked by access rules)."}),{ok:!1,data:null,error:e??null}):{ok:!0,data:r,error:null}}export{l as e};

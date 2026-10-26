@@ -1,0 +1,1 @@
+import{s as m}from"./index-BAmVVlQP.js";const o=1e3;async function u(s="email, name, position",n="name",c=m,f=!1){const r=[];for(let e=0;;e+=o){let a=c.from("employee_cache").select(s).order(n);f&&(a=a.eq("is_active",!0));const{data:i,error:l}=await a.range(e,e+o-1);if(l)break;const t=i??[];if(r.push(...t),t.length<o)break}return r}export{u as f};

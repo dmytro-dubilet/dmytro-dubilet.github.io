@@ -1,0 +1,1 @@
+import{y as i,s as o}from"./index-BAmVVlQP.js";function l(r=!0,n){return i({queryKey:["employee-options","all"],enabled:r,staleTime:3e5,queryFn:async()=>{let t=o.from("employee_cache").select("id, name").eq("is_active",!0).order("name").limit(1e3);const{data:s,error:a}=await t;if(a)throw a;return(s??[]).filter(e=>e.name).map(e=>({id:e.id,name:e.name}))}}).data??[]}export{l as u};

@@ -1,0 +1,1 @@
+import{s as o}from"./index-BAmVVlQP.js";const a=async(e,s=3600)=>{if(!e)return null;if(/^(https?:|data:|blob:)/i.test(e))return e;const{data:r,error:t}=await o.storage.from("course-files").createSignedUrl(e,s);return t||!r?null:r.signedUrl};export{a as r};

@@ -1,0 +1,1 @@
+import{s as a}from"./index-BAmVVlQP.js";async function o(r){try{const{data:s,error:e}=await a.functions.invoke("jira-set-sprint",{body:{taskId:r}});return e?{ok:!1,message:e.message}:{ok:(s==null?void 0:s.ok)!==!1,...s??{}}}catch(s){return{ok:!1,message:(s==null?void 0:s.message)??"Jira sync failed"}}}export{o as s};

@@ -1,0 +1,1 @@
+import{r as t}from"./index-BAmVVlQP.js";const e=["max-sm:[&_input]:text-base","max-sm:[&_select]:text-base","max-sm:[&_textarea]:text-base"];function m(){t.useEffect(()=>(document.documentElement.classList.add(...e),()=>document.documentElement.classList.remove(...e)),[])}export{m as u};
